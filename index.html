@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Elijah Adie Fashion Enterprise — men's and women's fashion, custom tailoring and elegant outfits.">
+  <title>Elijah Adie Fashion Enterprise</title>
+  <style>
+    :root { --gold:#c9a15b; --cream:#f4eee3; --black:#090909; --panel:#171615; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body { font-family:Georgia, 'Times New Roman', serif; background:var(--black); color:var(--cream); line-height:1.6; }
+    a { color:inherit; text-decoration:none; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:16px 7%; background:#050505; border-bottom:1px solid #3b2e1c; position:sticky; top:0; z-index:5; }
+    .brand { display:flex; align-items:center; gap:12px; color:var(--gold); font-weight:bold; letter-spacing:1px; }
+    .brand img { width:52px; height:52px; object-fit:cover; border-radius:50%; border:1px solid var(--gold); }
+    nav { display:flex; gap:22px; flex-wrap:wrap; font-family:Arial,sans-serif; font-size:14px; }
+    nav a:hover { color:var(--gold); }
+    .hero { min-height:570px; padding:100px 8%; display:flex; align-items:center; background:linear-gradient(90deg,rgba(0,0,0,.96),rgba(0,0,0,.70)), url('logo.jpg') center/cover no-repeat; }
+    .hero-content { max-width:690px; }
+    .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:4px; font:12px Arial,sans-serif; }
+    h1 { font-size:clamp(42px,7vw,76px); line-height:1.05; margin:18px 0; font-weight:normal; }
+    h1 span, h2 span { color:var(--gold); }
+    .hero p { max-width:550px; color:#d3ccc0; font:16px/1.8 Arial,sans-serif; }
+    .btn { display:inline-block; margin-top:28px; padding:13px 23px; background:var(--gold); color:#100d08; font: bold 13px Arial,sans-serif; letter-spacing:1px; border:1px solid var(--gold); }
+    .btn:hover { background:transparent; color:var(--gold); }
+    section { padding:76px 8%; }
+    .section-head { text-align:center; margin:0 auto 38px; max-width:700px; }
+    h2 { font-size:clamp(30px,4vw,43px); font-weight:normal; margin-bottom:10px; }
+    .section-head p, .about p { color:#c7c0b5; font:15px/1.8 Arial,sans-serif; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .tile { background:var(--panel); padding:30px 26px; border:1px solid #49391f; min-height:205px; }
+    .tile .number { color:var(--gold); font:12px Arial,sans-serif; letter-spacing:2px; }
+    .tile h3 { color:var(--gold); font-size:24px; font-weight:normal; margin:15px 0 10px; }
+    .tile p { color:#c7c0b5; font:14px/1.8 Arial,sans-serif; }
+    .about { background:#121110; text-align:center; }
+    .about p { max-width:760px; margin:auto; }
+    .contact { text-align:center; }
+    .contact p { color:#c7c0b5; font:15px/1.8 Arial,sans-serif; }
+    footer { padding:25px 8%; text-align:center; border-top:1px solid #3b2e1c; color:#a9a093; font:12px Arial,sans-serif; }
+    @media(max-width:760px) {
+      header { align-items:flex-start; flex-direction:column; }
+      nav { gap:13px; }
+      .hero { min-height:500px; padding:75px 7%; }
+      section { padding:58px 7%; }
+      .grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="#home">
+      <img src="logo.jpg" alt="Elijah Adie Fashion Enterprise logo">
+      <span>ELIJAH ADIE<br>FASHION ENTERPRISE</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">Style • Craftsmanship • Confidence</div>
+        <h1>Fashion made<br>to <span>define you.</span></h1>
+        <p>Discover thoughtful designs and custom-made outfits for men and women. From elegant native wear to standout occasion pieces, let us bring your style to life.</p>
+        <a class="btn" href="#collections">EXPLORE OUR FASHION</a>
+      </div>
+    </section>
+
+    <section id="collections">
+      <div class="section-head">
+        <div class="eyebrow">What we create</div>
+        <h2>Our <span>Collections</span></h2>
+        <p>Made with care, shaped around your taste, and tailored for the moments that matter.</p>
+      </div>
+      <div class="grid">
+        <article class="tile"><div class="number">01 / MEN</div><h3>Men's Fashion</h3><p>Senator outfits, native wear, suits, shirts, trousers and custom-made looks.</p></article>
+        <article class="tile"><div class="number">02 / WOMEN</div><h3>Women's Fashion</h3><p>Elegant gowns, dresses, skirts, traditional outfits and occasion styles.</p></article>
+        <article class="tile"><div class="number">03 / BESPOKE</div><h3>Custom Tailoring</h3><p>Personalised designs and fittings created around your measurements and preferences.</p></article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="eyebrow">Our story</div>
+      <h2>About <span>Elijah Adie</span></h2>
+      <p>Elijah Adie Fashion Enterprise celebrates personal style through creative fashion and careful tailoring. We make outfits for both men and women, with a focus on quality craftsmanship, a great fit and designs that help you feel confident.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="eyebrow">Let's create your look</div>
+      <h2>Ready to place an <span>order?</span></h2>
+      <p>Message us on WhatsApp to discuss your design, measurements and order.</p>
+      <a class="btn" href="https://wa.me/2348081254429?text=Hello%20Elijah%20Adie%20Fashion%20Enterprise%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">CHAT WITH US ON WHATSAPP</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Elijah Adie Fashion Enterprise. All rights reserved.</footer>
+</body>
+</html>
